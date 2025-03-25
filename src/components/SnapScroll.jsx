@@ -13,8 +13,7 @@ const SnapScroll = ({ children }) => {
         currentIndex = Math.max(currentIndex - 1, 0);
       }
 
-      window.scrollTo({
-        top: currentIndex * window.innerHeight,
+      document.getElementById(`section-${currentIndex}`)?.scrollIntoView({
         behavior: "smooth",
       });
     };
@@ -24,7 +23,16 @@ const SnapScroll = ({ children }) => {
     return () => window.removeEventListener("wheel", handleScroll);
   }, [children]);
 
-  return <div>{children}</div>;
+  return (
+    <div className="snap-container">
+      {children.map((child, index) => (
+        <div key={index} id={`section-${index}`} className="h-screen">
+          {child}
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default SnapScroll;
+
