@@ -5,14 +5,16 @@ import SnapScroll from "../components/SnapScroll";
 const Home = () => {
     return (
         <div>
+        <Navbar/>
         <SnapScroll>
             
             {/*Sección de Landing*/}
             <section 
-            className="relative h-screen w-screen flex flex-col bg-cover bg-center text-white" 
+            className="relative h-screen w-screen flex flex-col bg-cover bg-center text-white justify-center items-center" 
             style={{ backgroundImage: 'url(/public/edificios_background.jpg)' }}>
-                
-            <h1 className="text-4xl font-bold text-center">VERONA</h1>
+            <div className="absolute inset-0 bg-blue-500/30"></div>
+            <h1 className="relative text-7xl font-bold">VERONA</h1>
+            <h2 className="relative text-2xl font-semibold">Administración de Consorcios</h2>
 
             </section>
 
