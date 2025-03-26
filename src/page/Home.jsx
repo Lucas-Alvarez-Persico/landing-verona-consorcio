@@ -33,8 +33,8 @@ const Home = () => {
 
                 <div className="top-0 left-0 w-full h-[75vh] bg-cover bg-center" 
                 style={{ backgroundImage: 'url(/public/contact_us_image.jpg)' }}>
-                    <div className="justify-center items-center text-center">
-                    <h1 className="text-4xl text-lime-500 font-bold mt-30">CONTÁCTENOS!</h1>
+                    <div className="justify-center items-center">
+                    <h1 className="text-7xl text-white font-bold mt-30 p-30">CONTÁCTENOS!</h1>
                     <p className="mt-4 text-lg">¡Hablemos! Estamos listos para ayudarte.</p>
                     </div>
                 </div>
