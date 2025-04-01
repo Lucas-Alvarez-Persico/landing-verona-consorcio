@@ -35,16 +35,19 @@ const Home = () => {
                 </section>
 
                 {/* Sección de "Quiénes Somos" */}
-                <section className="h-screen w-screen flex flex-col items-center justify-center bg-blue-500 text-white text-center px-4">
-                    <h1 className="text-3xl md:text-4xl font-bold">Quiénes Somos</h1>
-                    <p className="mt-4 text-base md:text-lg max-w-[90%] md:max-w-[600px]">
-                        Ofrecemos soluciones innovadoras para tu negocio.
-                    </p>
-
+                <section className="h-screen w-screen flex flex-col items-center justify-center bg-blue-900 text-white text-center px-4 relative">
+                    {/* Contenido */}
+                    <div className="relative z-10 p-8">
+                        <h1 className="text-4xl font-bold">Quiénes Somos</h1>
+                        <p className="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </section>
 
                 {/* Sección de "Nuestros Servicios" */}
-                <section id="servicios" className="h-screen w-screen flex flex-col items-center justify-center bg-purple-500 text-white text-center px-4">
+                <section id="servicios" className="h-screen w-screen flex flex-col items-center justify-center bg-blue-800 text-white text-center px-4 relative">
+                    <div className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-right"
+                        style={{ backgroundImage: 'url(/public/a.jpg)', backgroundSize: 'cover' }}
+                    />
                     <h1 className="text-3xl md:text-4xl font-bold">Nuestros Servicios</h1>
                     <p className="mt-4 text-base md:text-lg max-w-[90%] md:max-w-[600px]">
                         Un equipo apasionado creando experiencias digitales.
