@@ -5,10 +5,12 @@ import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
 
 
+
 const Home = () => {
     return (
         <div>
             <Navbar />
+
             <SnapScroll>
 
                 {/* Sección de Landing */}
@@ -38,6 +40,7 @@ const Home = () => {
                     <p className="mt-4 text-base md:text-lg max-w-[90%] md:max-w-[600px]">
                         Ofrecemos soluciones innovadoras para tu negocio.
                     </p>
+
                 </section>
 
                 {/* Sección de "Nuestros Servicios" */}
@@ -80,6 +83,7 @@ const Home = () => {
                 </section>
 
             </SnapScroll>
+            
         </div>
     );
 };
