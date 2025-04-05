@@ -1,4 +1,5 @@
 import Form from "../components/Form";
+import ServicesCarrousel from "../components/ServicesCarrousel";
 import Navbar from "../components/Navbar";
 import SnapScroll from "../components/SnapScroll";
 import { Mail } from "lucide-react";
@@ -36,23 +37,28 @@ const Home = () => {
 
                 {/* Sección de "Quiénes Somos" */}
                 <section className="h-screen w-screen flex flex-col items-center justify-center bg-blue-900 text-white text-center px-4 relative">
-                    {/* Contenido */}
-                    <div className="relative z-10 p-8">
-                        <h1 className="text-4xl font-bold">Quiénes Somos</h1>
-                        <p className="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-right"
+                        style={{ backgroundImage: 'url(/public/a.jpg)', backgroundSize: 'cover' }}
+                    />
+                    <div className="top-0 left-0 w-full h-[90vh] bg-cover bg-center flex flex-col items-start px-4 md:px-20">
+                    <h1 className="text-4xl md:text-7xl font-bold mt-10 md:mt-40">Quienes Somos</h1>
+                    <p className="text-lg md:text-2xl mt-6 md:mt-10">
+                        Ofrecemos una gran variedad de servicios y soluciones.
+                    </p>
                     </div>
                 </section>
 
                 {/* Sección de "Nuestros Servicios" */}
-                <section id="servicios" className="h-screen w-screen flex flex-col items-center justify-center bg-blue-800 text-white text-center px-4 relative">
-                    <div className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-right"
-                        style={{ backgroundImage: 'url(/public/a.jpg)', backgroundSize: 'cover' }}
-                    />
-                    <h1 className="text-3xl md:text-4xl font-bold">Nuestros Servicios</h1>
-                    <p className="mt-4 text-base md:text-lg max-w-[90%] md:max-w-[600px]">
-                        Un equipo apasionado creando experiencias digitales.
-                    </p>
+                <section id="servicios" className="w-full min-h-screen flex flex-col items-center bg-blue-900 text-white text-center px-4 py-20 overflow-hidden">
+                    <div className="z-10 p-8">
+                        <h1 className="text-4xl md:text-7xl font-bold">Nuestros Servicios</h1>
+                        <p className="text-lg md:text-2xl mt-6 mb-30">Ofrecemos una gran variedad de servicios y soluciones.</p>
+                        
+                    </div>
+                    <ServicesCarrousel />
+
                 </section>
+
 
                 {/* Sección de Contacto */}
                 <section className="h-screen w-screen flex flex-col items-center bg-blue-900 text-white">
