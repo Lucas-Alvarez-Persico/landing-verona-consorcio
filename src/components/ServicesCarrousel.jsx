@@ -31,7 +31,7 @@ const AnimatedCarousel = () => {
           </div>
         ))}
   
-        <style jsx>{`
+        <style>{`
           @keyframes slide {
             0% {
               left: 100%;

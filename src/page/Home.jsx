@@ -36,17 +36,27 @@ const Home = () => {
                 </section>
 
                 {/* Sección de "Quiénes Somos" */}
-                <section className="h-screen w-screen flex flex-col items-center justify-center bg-blue-900 text-white text-center px-4 relative">
-                <div className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-right"
-                        style={{ backgroundImage: 'url(/public/a.jpg)', backgroundSize: 'cover' }}
-                    />
-                    <div className="top-0 left-0 w-full h-[90vh] bg-cover bg-center flex flex-col items-start px-4 md:px-20">
-                    <h1 className="text-4xl md:text-7xl font-bold mt-10 md:mt-40">Quienes Somos</h1>
-                    <p className="text-lg md:text-2xl mt-6 md:mt-10">
-                        Ofrecemos una gran variedad de servicios y soluciones.
-                    </p>
-                    </div>
-                </section>
+                <section className="w-screen min-h-screen flex flex-col md:flex-row bg-blue-900 text-white">
+  {/* Mitad izquierda: Texto */}
+  <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-16 py-16 z-10">
+    <h1 className="text-4xl md:text-6xl font-bold">¿Quiénes Somos?</h1>
+    <p className="text-lg md:text-2xl mt-6 text-left">
+      En Verona, somos especialistas en la administración de consorcios, comprometidos con brindar un servicio transparente, eficiente y cercano a cada propietario e inquilino. Con una trayectoria construida sobre la confianza y la responsabilidad, gestionamos cada edificio como si fuera nuestro.
+    </p>
+
+    <h2 className="text-3xl md:text-5xl font-bold mt-12">Nuestra Misión</h2>
+    <p className="text-lg md:text-2xl mt-4 italic text-left">
+      "Brindar una administración de consorcios transparente, eficiente y humana, cuidando cada detalle para garantizar el bienestar de los vecinos y el correcto funcionamiento de cada edificio."
+    </p>
+  </div>
+
+  {/* Mitad derecha: Imagen de fondo */}
+  <div
+    className="w-full md:w-1/2 h-64 md:h-auto bg-cover bg-center"
+    style={{ backgroundImage: "url('/a.jpg')" }}
+  />
+</section>
+
 
                 {/* Sección de "Nuestros Servicios" */}
                 <section id="servicios" className="w-full min-h-screen flex flex-col items-center bg-blue-900 text-white text-center px-4 py-20 overflow-hidden">
