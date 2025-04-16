@@ -24,7 +24,7 @@ const AnimatedCarousel = () => {
               left: "100%"
             }}
           >
-            <div className="absolute flex items-center justify-center text-black font-bold z-[1] opacity-90 rounded-xl inset-0.5 bg-blue-200 text-base p-6 text-center">
+            <div className="absolute flex items-center justify-center text-blue-900 text-2xl font-bold z-[1] opacity-100 rounded-xl inset-0.5 bg-blue-200  p-6 text-center">
               {text}
             </div>
             <div className="absolute w-72 h-56 bg-white blur-[50px] -left-1/2 -top-1/2"></div>
