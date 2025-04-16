@@ -1,7 +1,7 @@
 const AnimatedCarousel = () => {
   const cards = [
     {
-      text: "Mantenimiento predictivo de las instalaciones",
+      text: "Control de Gastos y Facturas",
       icon: (
         <svg className="w-12 h-12 mt-4 text-blue-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M9.75 3v2.25M14.25 3v2.25M3 18.75V7.5A2.25 2.25 0 015.25 5.25h13.5A2.25 2.25 0 0121 7.5v11.25M3 18.75h18M3 18.75v1.5A2.25 2.25 0 005.25 22.5h13.5A2.25 2.25 0 0021 20.25v-1.5" />
@@ -9,7 +9,7 @@ const AnimatedCarousel = () => {
       ),
     },
     {
-      text: "Supervisión remota en tiempo real",
+      text: "Control de Ingresos y Egresos",
       icon: (
         <svg className="w-12 h-12 mt-4 text-blue-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

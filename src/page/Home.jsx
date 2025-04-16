@@ -14,7 +14,7 @@ const Home = () => {
                 {/* Landing */}
                 <section 
                     className="relative h-screen w-screen flex flex-col bg-cover bg-center text-white justify-center items-center px-4 sm:px-6 lg:px-8 text-center"
-                    style={{ backgroundImage: 'url(/public/edificios_background.jpg)' }}>
+                    style={{ backgroundImage: 'url(/public/edificios-background.jpg)' }}>
                     
                     <div className="absolute inset-0 bg-blue-500/30"></div>
 
@@ -66,7 +66,7 @@ const Home = () => {
                 <section className="h-screen w-screen flex flex-col items-center bg-blue-900 text-white">
                     
                     <div className="top-0 left-0 w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-start px-4 md:px-20"
-                        style={{ backgroundImage: 'url(/public/contact_us_image.jpg)' }}>
+                        style={{ backgroundImage: 'url(/public/contact-us-image.jpg)' }}>
                         
                         <h1 className="text-4xl md:text-7xl font-bold mt-10 md:mt-40">CONTÁCTENOS!</h1>
                         <h2 className="text-lg md:text-2xl font-bold mt-6 md:mt-20">
