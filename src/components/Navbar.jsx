@@ -10,9 +10,9 @@ const Navbar = () => {
   
     return (
       <>
-    <div className="navbar bg-blue-500 fixed w-full top-0 flex items-center justify-between px-6 h-16 text-white">
+    <div className="navbar bg-blue-500 fixed w-full top-0 flex items-center justify-between px-6 h-20 text-white">
         {/* Logo de la empresa */}
-        <button onClick={() => scrollToSection(0)}><img src="building-user-solid.svg" alt="Logo" className="h-10" /></button>
+        <button onClick={() => scrollToSection(0)}><img src="Logo_Verona_white.png" alt="Logo" className="h-15" /></button>
 
         {/* Categorias de la pagina */}
         <div className= "flex-1 flex justify-end">
